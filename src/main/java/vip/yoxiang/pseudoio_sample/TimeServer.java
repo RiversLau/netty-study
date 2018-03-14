@@ -1,6 +1,6 @@
-package vip.yoxiang.sample4PseudoIO;
+package vip.yoxiang.pseudoio_sample;
 
-import vip.yoxiang.sample4bio.TimeServerHandler;
+import vip.yoxiang.bio_sample.TimeServerHandler;
 
 import java.io.IOException;
 import java.net.ServerSocket;

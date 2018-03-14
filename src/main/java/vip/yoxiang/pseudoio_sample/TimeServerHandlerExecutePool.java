@@ -1,4 +1,4 @@
-package vip.yoxiang.sample4PseudoIO;
+package vip.yoxiang.pseudoio_sample;
 
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.ExecutorService;

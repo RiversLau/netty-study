@@ -1,4 +1,4 @@
-package vip.yoxiang.sample4bio;
+package vip.yoxiang.bio_sample;
 
 import java.io.BufferedReader;
 import java.io.IOException;
