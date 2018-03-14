@@ -51,8 +51,26 @@ public class TimeClientHandler implements Runnable {
                 while (it.hasNext()) {
                     key = it.next();
                     it.remove();
-                    handleInput(key);
+                    try {
+                        handleInput(key);
+                    } catch (IOException e) {
+                        if (key != null) {
+                            key.cancel();
+                            if (key.channel() != null) {
+                                key.channel().close();
+                            }
+                        }
+                    }
                 }
+            } catch (IOException e) {
+                e.printStackTrace();
+                System.exit(1);
+            }
+        }
+
+        if (selector != null) {
+            try {
+                selector.close();
             } catch (IOException e) {
                 e.printStackTrace();
             }
