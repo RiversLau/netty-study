@@ -1,4 +1,4 @@
-package vip.yoxiang.netty.introduction;
+package vip.yoxiang.netty.chapter03;
 
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
